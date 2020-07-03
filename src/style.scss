@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+
+h1,
+h2,
+h3,
+h4 {
+  @apply text-grayDark-700;
+}
+
+@tailwind utilities;
