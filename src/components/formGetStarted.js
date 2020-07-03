@@ -26,6 +26,7 @@ export default function FormGetStarted() {
       name="get-started"
       method="POST"
       data-netlify="true"
+      data-netlify-recaptcha="true"
     >
       <div className="input-group mt-2">
         <label className="text-sm tracking-wide" htmlFor="firstName">
@@ -52,6 +53,8 @@ export default function FormGetStarted() {
           errors.firstName.type === "pattern" &&
           handleError("Invalid first name")}
       </div>
+      {/* Netlify Recaptcha */}
+      <div className="hidden" data-netlify-recaptcha="true" />
       <div className="input-group mt-2">
         <label className="text-sm tracking-wide" htmlFor="lastName">
           Last Name
