@@ -16,7 +16,7 @@ export default function SecIntro() {
   const animation = useAnimation()
   const [imgSync, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    // threshold: 0.1,
   })
   useEffect(() => {
     if (inView) {

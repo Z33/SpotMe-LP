@@ -56,7 +56,7 @@ export default function SecStayInSync() {
   const animation = useAnimation()
   const [imgSync, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.25,
+    // threshold: 0.25,
   })
   useEffect(() => {
     if (inView) {
