@@ -7,7 +7,7 @@ export default function FormGetStarted() {
   // Form Functions
   const { register, handleSubmit, errors } = useForm()
   const onSubmit = (data, e) => {
-    e.preventDefault()
+    // e.preventDefault()
     console.log("Submit", data)
   }
 
