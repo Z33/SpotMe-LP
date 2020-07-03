@@ -6,7 +6,7 @@ import "../style.scss"
 import SecIntro from "../components/secIntro"
 import SecStayInSync from "../components/secStayInSync"
 import SecSwitching from "../components/secSwitching"
-import FormTest from "../components/formTest"
+// import FormTest from "../components/formTest"
 
 export default function HomePage() {
   return (
@@ -23,7 +23,7 @@ export default function HomePage() {
 
       <SecSwitching />
 
-      <FormTest />
+      {/* <FormTest /> */}
 
       {/* <section className="hidden pt-100 px-50 bg-gray-100">
         <div className="container mx-auto">
