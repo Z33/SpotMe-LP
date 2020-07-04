@@ -12,18 +12,6 @@ import LogoCvent from "../assets/img/logo-cvent.svg"
 import FormGetStarted from "./formGetStarted"
 
 export default function SecIntro() {
-  // Animation
-  const animation = useAnimation()
-  const [imgSync, inView] = useInView({
-    triggerOnce: true,
-    // threshold: 0.1,
-  })
-  useEffect(() => {
-    if (inView) {
-      animation.start("visible")
-    }
-  }, [animation, inView])
-
   const animateLogos = {
     visible: {
       x: 0,
@@ -61,8 +49,7 @@ export default function SecIntro() {
 
             <motion.ul
               className="flex flex-wrap justify-start items-end pr-4 mt-2 -mb-4 -ml-4"
-              ref={imgSync}
-              animate={animation}
+              animate="visible"
               initial="hidden"
               variants={{
                 visible: {
@@ -146,7 +133,7 @@ export default function SecIntro() {
             <motion.div
               className="relative block w-full pt-8 p-4 -mb-50 bg-white rounded shadow-md"
               style={{ maxWidth: "350px", marginBottom: "-25px" }}
-              animate={animation}
+              animate="visible"
               initial="hidden"
               variants={{
                 visible: {

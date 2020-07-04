@@ -25,21 +25,22 @@ const SecSwitching = () => {
 
   // Animation
   const animation = useAnimation()
-  const [imgSync, inView] = useInView({
+  const [ref, inView, entry] = useInView({
     triggerOnce: true,
-    // threshold: 0.25,
+    threshold: 0.5,
   })
+
   useEffect(() => {
     if (inView) {
+      console.log("In View")
       animation.start("visible")
     }
   }, [animation, inView])
 
   return (
-    <section id="switching" className="relative p-0 pt-50 m-0 mb-32">
+    <section id="switching" className="relative p-0 pt-50 m-0 mb-32" ref={ref}>
       <motion.span
         className="bg absolute top-0 left-0 h-full bg-orange-100 bg-opacity-50"
-        ref={imgSync}
         animate={animation}
         initial="hidden"
         variants={{
@@ -68,7 +69,6 @@ const SecSwitching = () => {
           <motion.div
             id="msg-switch"
             className="flex-initial mb-50 mr-8 lg:mr-50"
-            ref={imgSync}
             animate={animation}
             initial="hidden"
             variants={{
@@ -100,13 +100,14 @@ const SecSwitching = () => {
               lives, for example LinkedIn and Facebook.
             </p>
 
-            <motion.div>
+            <motion.div
+              className="table mx-auto lg:mx-0"
+              whileHover={{ scale: 1.05 }}
+            >
               <AnchorLink
                 href="#get-started"
                 title="Get Started with SpotMe + Cvent"
-                className="table py-2 px-4 mt-8 mx-auto lg:mx-0 border-2 border-primary-500 font-bold text-xl text-center text-primary-500 hover:bg-primary-500 hover:bg-opacity-10 rounded-full"
-                animate={animation}
-                whileHover={{ scale: 1.05 }}
+                className="table py-2 px-4 mt-8 lg:mx-0 border-2 border-primary-500 font-bold text-xl text-center text-primary-500 hover:bg-primary-500 hover:bg-opacity-10 rounded-full"
               >
                 Make the switch
               </AnchorLink>
@@ -115,7 +116,6 @@ const SecSwitching = () => {
 
           <div id="img-switch" className="flex-initial mr-8 lg:mr-50">
             <motion.div
-              ref={imgSync}
               animate={animation}
               initial="hidden"
               variants={{

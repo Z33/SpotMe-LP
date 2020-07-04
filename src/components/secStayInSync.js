@@ -54,12 +54,14 @@ const stayInSyncListItems = [
 export default function SecStayInSync() {
   // Animation
   const animation = useAnimation()
-  const [imgSync, inView] = useInView({
+  const [ref, inView, entry] = useInView({
     triggerOnce: true,
-    // threshold: 0.25,
+    threshold: 0.25,
   })
+
   useEffect(() => {
     if (inView) {
+      console.log("In View")
       animation.start("visible")
     }
   }, [animation, inView])
@@ -72,8 +74,7 @@ export default function SecStayInSync() {
             id="img-sync"
             className="lg:flex-1 w-full mb-50 mr-8 lg:lg:mr-50"
             style={{ maxWidth: "600px" }}
-            ref={imgSync}
-            animate={animation}
+            animate="visible"
             initial="hidden"
             variants={{
               visible: {
@@ -102,6 +103,7 @@ export default function SecStayInSync() {
             id="msg-sync"
             className="flex-auto w-full mb-50 mr-8 lg:lg:mr-50"
             style={{ maxWidth: "500px" }}
+            ref={ref}
           >
             <h2 className="text-3xl leading-tight">
               Deliver an immersive experience
@@ -109,7 +111,6 @@ export default function SecStayInSync() {
 
             <motion.ul
               className="mt-4"
-              ref={imgSync}
               animate={animation}
               initial="hidden"
               variants={{
@@ -141,7 +142,7 @@ export default function SecStayInSync() {
                       },
                       hidden: {
                         y: -16,
-                        opacity: 0.1,
+                        opacity: 0,
                         transition: {
                           y: { stiffness: 500 },
                         },
