@@ -21,18 +21,15 @@ const SecSwitching = () => {
     }
   `)
 
-  console.log("data", data)
-
   // Animation
   const animation = useAnimation()
   const [ref, inView, entry] = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.25,
   })
 
   useEffect(() => {
     if (inView) {
-      console.log("In View")
       animation.start("visible")
     }
   }, [animation, inView])
@@ -40,29 +37,29 @@ const SecSwitching = () => {
   return (
     <section id="switching" className="relative p-0 pt-50 m-0 mb-32" ref={ref}>
       <motion.span
-        className="bg absolute top-0 left-0 h-full bg-orange-100 bg-opacity-50"
-        animate={animation}
-        initial="hidden"
-        variants={{
-          visible: {
-            opacity: 1,
-            width: 100 + "%",
-            transition: {
-              duration: 1.5,
-              transition: {
-                delay: 1,
-                type: "spring",
-                stiffness: 500,
-                damping: 60,
-                mass: 6,
-              },
-            },
-          },
-          hidden: {
-            opacity: 0,
-            width: 0 + "%",
-          },
-        }}
+        className="bg absolute top-0 left-0 w-full h-full bg-orange-100 bg-opacity-50"
+        // animate={animation}
+        // initial="hidden"
+        // variants={{
+        //   visible: {
+        //     opacity: 1,
+        //     width: 100 + "%",
+        //     transition: {
+        //       duration: 1.5,
+        //       transition: {
+        //         delay: 1,
+        //         type: "spring",
+        //         stiffness: 500,
+        //         damping: 60,
+        //         mass: 6,
+        //       },
+        //     },
+        //   },
+        //   hidden: {
+        //     opacity: 0,
+        //     width: 0 + "%",
+        //   },
+        // }}
       />
       <div className="relative container mx-auto">
         <div className="flex flex-wrap justify-center items-center pl-8 lg:pl-50 text-center lg:text-left">

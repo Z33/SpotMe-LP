@@ -35,12 +35,15 @@ export default function SecIntro() {
   }
 
   return (
-    <section id="intro" className="relative pt-50 bg-orange-100 bg-opacity-25">
+    <section
+      id="intro"
+      className="relative lg:pt-50 bg-orange-100 bg-opacity-25"
+    >
       <span className="absolute top-0 left-0 w-full h-full flex justify-center items-center overflow-hidden opacity-20">
         <Bg className="w-full h-auto mx-auto" style={{ maxWidth: "1200px" }} />
       </span>
       <div className="relative container mx-auto">
-        <div className="flex flex-wrap justify-center items-end pt-50 pt-50 pr-8 lg:pr-50 -mb-50">
+        <div className="flex flex-wrap justify-center items-end pt-50 pr-8 lg:pr-50 -mb-50">
           <div
             id="msg-intro"
             className="flex-1 w-full pb-50 ml-8 lg:ml-50"

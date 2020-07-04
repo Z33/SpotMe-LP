@@ -61,7 +61,6 @@ export default function SecStayInSync() {
 
   useEffect(() => {
     if (inView) {
-      console.log("In View")
       animation.start("visible")
     }
   }, [animation, inView])
