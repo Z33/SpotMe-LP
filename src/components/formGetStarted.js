@@ -22,11 +22,10 @@ export default function FormGetStarted() {
   }
 
   const onSubmit = (data, e) => {
-    console.log("Submit", data)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "get-started", data }),
+      body: encode({ "form-name": "get-started", ...data }),
     })
       .then(() => alert("Success!"))
       .catch(error => alert(error))
