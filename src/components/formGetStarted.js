@@ -40,7 +40,7 @@ export default function FormGetStarted() {
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
+      // data-netlify-recaptcha="true"
     >
       <input type="hidden" name="form-name" value="get-started" />
       <div className="input-group mt-2">
@@ -69,7 +69,7 @@ export default function FormGetStarted() {
           handleError("Invalid first name")}
       </div>
       {/* Netlify Recaptcha */}
-      <div className="hidden" data-netlify-recaptcha="true" />
+      {/* <div className="hidden" data-netlify-recaptcha="true" /> */}
       <div className="input-group mt-2">
         <label className="text-sm tracking-wide" htmlFor="lastName">
           Last Name
