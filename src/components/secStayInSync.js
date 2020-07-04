@@ -29,7 +29,7 @@ const stayInSyncListItems = [
     icon: <RiTimerFlashLine title="Stopwatch with lighting icon" />,
     title: "Save time and do more",
     message:
-      "Build your event in Cvent, integrate in seconds and leverage our best-in-class app templates",
+      "Build your event in Cvent, integrate in seconds, and leverage our best-in-class app templates",
   },
   {
     icon: <RiVipCrown2Line title="Crown icon" />,
@@ -47,7 +47,7 @@ const stayInSyncListItems = [
     icon: <RiAwardLine title="Award icon" />,
     title: "Get better results",
     message:
-      "Drive higher adoption, increase audience activity and impress leadership with SpotMe’s buyer signals into leads, pipeline and revenue",
+      "Drive higher adoption, increase audience activity, and impress leadership with SpotMe’s buyer signals into leads, pipelines, and revenue",
   },
 ]
 
