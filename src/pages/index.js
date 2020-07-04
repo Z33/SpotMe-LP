@@ -10,7 +10,7 @@ import SecSwitching from "../components/secSwitching"
 
 export default function HomePage() {
   return (
-    <div className="pb-100 text-grayDark-500">
+    <div className="pb-100 text-grayDark-500 overflow-x-hidden">
       <Helmet>
         <meta charSet="utf-8" />
         <title>SpotMe + Cvent, Enhance your events</title>
