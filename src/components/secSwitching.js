@@ -91,9 +91,7 @@ const SecSwitching = () => {
               style={{ marginTop: "-50px", maxWidth: "400px" }}
             />
 
-            <h2 className="mt-4 text-4xl leading-tight">
-              Making the switch is easy
-            </h2>
+            <h2 className="mt-4 text-4xl leading-tight">Switching is easy</h2>
 
             <p className="w-full mt-4" style={{ maxWidth: "600px" }}>
               When you switch to SpotMe, your audience will already be familiar
