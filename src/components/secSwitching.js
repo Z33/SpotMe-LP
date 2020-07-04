@@ -81,7 +81,7 @@ const SecSwitching = () => {
               },
               hidden: {
                 scale: 0.9,
-                opacity: 0.1,
+                opacity: 0,
               },
             }}
           >
@@ -97,7 +97,7 @@ const SecSwitching = () => {
               When you switch to SpotMe, your audience will already be familiar
               with our app. SpotMe apps have been designed based on other
               commercial apps that your audience already uses in their daily
-              lives, for example LinkedIn and Facebook.
+              lives, for example <b>LinkedIn</b> and <b>Facebook</b>.
             </p>
 
             <motion.div

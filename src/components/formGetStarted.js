@@ -119,8 +119,8 @@ export default function FormGetStarted() {
       <div className="input-group submit">
         <motion.input
           type="submit"
-          value="Get Started"
-          className="block w-64 max-w-full py-2 px-4 mt-4 mx-auto font-bold text-xl text-white border-2 border-primary-500 bg-primary-500 hover:bg-primary-400 rounded-full cursor-pointer"
+          value="Request a Discovery Session"
+          className="block py-2 px-4 mt-4 mx-auto font-bold text-lg text-white border-2 border-primary-500 bg-primary-500 hover:bg-primary-400 rounded-full cursor-pointer whitespace-normal "
           whileHover={{ scale: 1.05 }}
         />
       </div>

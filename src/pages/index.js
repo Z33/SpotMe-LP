@@ -23,6 +23,14 @@ export default function HomePage() {
 
       <SecSwitching />
 
+      <footer>
+        <div className="container mx-auto">
+          <p className="text-center text-xs">
+            Copyright © 2020 SpotMe. All rights reserved.
+          </p>
+        </div>
+      </footer>
+
       {/* <FormTest /> */}
 
       {/* <section className="hidden pt-100 px-50 bg-gray-100">

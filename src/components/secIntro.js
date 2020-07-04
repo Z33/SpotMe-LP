@@ -41,8 +41,12 @@ export default function SecIntro() {
       </span>
       <div className="relative container mx-auto">
         <div className="flex flex-wrap justify-center items-end pt-50 pt-50 pr-8 lg:pr-50 -mb-50">
-          <div id="msg-intro" className="flex-initial pb-50 ml-8 lg:ml-50">
-            <h1 className="text-3xl leading-tight">
+          <div
+            id="msg-intro"
+            className="flex-1 w-full pb-50 ml-8 lg:ml-50"
+            style={{ maxWidth: "600px" }}
+          >
+            <h1 className="text-2xl leading-tight">
               Enhance your events with{" "}
               <span className="sr-only">SpotMe + Cvent</span>
             </h1>
