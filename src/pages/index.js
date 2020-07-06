@@ -13,8 +13,17 @@ export default function HomePage() {
     <div className="pb-100 text-grayDark-500 overflow-x-hidden">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>SpotMe + Cvent, Enhance your events</title>
-        {/* <link rel="canonical" href="https://spotme.com/" /> */}
+        <title>SpotMe + Cvent</title>
+
+        <meta
+          name="description"
+          content="Enhance your events with SpotMe + Cvent"
+        />
+        <meta
+          name="keywords"
+          content="Events Meetings Management Conferencing Sync Video Online "
+        />
+        <link rel="canonical" href="https://spotme.tdaug.com/" />
       </Helmet>
 
       <SecIntro />

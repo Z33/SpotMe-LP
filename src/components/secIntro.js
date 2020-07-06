@@ -69,7 +69,11 @@ export default function SecIntro() {
               }}
             >
               <motion.div variants={animateLogos}>
-                <LogoSpotMe className="mb-4 ml-4 w-auto h-12 max-h-full" />
+                <LogoSpotMe
+                  className="mb-4 ml-4 w-auto h-12 max-h-full"
+                  alt="SpotMe Logo"
+                  title="SpotMe Logo"
+                />
               </motion.div>
               <motion.span
                 className="mb-4 ml-4 text-3xl font-bold leading-tight"
@@ -78,7 +82,11 @@ export default function SecIntro() {
                 +
               </motion.span>
               <motion.div variants={animateLogos}>
-                <LogoCvent className="mb-4 ml-4 w-auto h-10 max-h-full" />
+                <LogoCvent
+                  className="mb-4 ml-4 w-auto h-10 max-h-full"
+                  alt="Cvent Logo"
+                  title="Cvent Logo"
+                />
               </motion.div>
             </motion.ul>
 
@@ -88,7 +96,7 @@ export default function SecIntro() {
               SpotMe, and easily keep everything in sync.
             </p>
 
-            <h2 className="text-lg mt-8">Customers typically see...</h2>
+            <h2 className="text-lg mt-8">Users typically see...</h2>
 
             <hr className="mt-2 border-primary-500 border-2 w-32 max-w-full" />
 

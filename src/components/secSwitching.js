@@ -86,6 +86,8 @@ const SecSwitching = () => {
               fluid={data.file.childImageSharp.fluid}
               className="w-full border-b-2 border-white mx-auto lg:mx-0"
               style={{ marginTop: "-50px", maxWidth: "400px" }}
+              alt="SpotMe desktop and mobile screenshots"
+              title="SpotMe desktop and mobile screenshots"
             />
 
             <h2 className="mt-4 text-4xl leading-tight">Switching is easy</h2>
@@ -136,6 +138,8 @@ const SecSwitching = () => {
               <MobileUser
                 className="max-w-full"
                 style={{ width: "250px", marginBottom: "-100px" }}
+                alt="Mobile user"
+                title="Mobile user"
               />
             </motion.div>
           </div>
