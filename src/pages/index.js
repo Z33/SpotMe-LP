@@ -12,9 +12,10 @@ export default function HomePage() {
   return (
     <div className="pb-100 text-grayDark-500 overflow-x-hidden">
       <Helmet>
+        {/* Primary Meta Tags */}
         <meta charSet="utf-8" />
         <title>SpotMe + Cvent</title>
-
+        <meta name="title" content="SpotMe + Cvent" />
         <meta
           name="description"
           content="Enhance your events with SpotMe + Cvent"
@@ -24,6 +25,26 @@ export default function HomePage() {
           content="Events Meetings Management Conferencing Sync Video Online "
         />
         <link rel="canonical" href="https://spotme.tdaug.com/" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://spotme.tdaug.com/" />
+        <meta property="og:title" content="SpotMe + Cvent" />
+        <meta
+          property="og:description"
+          content="Enhance your events with SpotMe + Cvent"
+        />
+        <meta property="og:image" content="" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://spotme.tdaug.com/" />
+        <meta property="twitter:title" content="SpotMe + Cvent" />
+        <meta
+          property="twitter:description"
+          content="Enhance your events with SpotMe + Cvent"
+        />
+        <meta property="twitter:image" content="" />
       </Helmet>
 
       <SecIntro />
